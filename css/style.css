@@ -234,7 +234,7 @@ ul {
 
 .title-dark,
 .text-dark {
-    margin: 1rem 2rem;
+    margin: 2rem 3rem;
 }
 
 .btn-dark {
@@ -242,7 +242,14 @@ ul {
     color: var(--light);
 }
 
+.dark-part-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .dark-part button {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -412,19 +419,27 @@ article {
         margin: 0 auto;
     }
 
-    .dark-part {
-        align-items: flex-start;
-    }
-
     .dark-part img {
-        max-width: 55rem;
+        max-width: 65rem;
     }
 
-    .title-dark,
-    .text-dark {
+    .dark-part {
+        min-height: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .dark-part-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 65rem;
+    }
+
+    .text-dark,
+    .title-dark {
         text-align: left;
-        max-width: 42rem;
-        margin-left: 8rem;
+        margin: 1rem 0;
     }
 
     .title-dark {
@@ -433,10 +448,6 @@ article {
 
     .text-dark {
         font-size: 2rem;
-    }
-
-    .dark-part button {
-        margin-left: 8rem;
     }
 
     .news {
@@ -488,5 +499,95 @@ article {
     .logo-footer {
         justify-content: left;
         margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    .toggler-icon {
+        display: none;
+    }
+
+    .collapsible-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        height: fit-content;
+        width: fit-content;
+        background-color: var(--light);
+        display: flex;
+        flex-direction: row;
+        position: unset;
+    }
+
+    .nav-links .list {
+        display: flex;
+        align-items: center;
+    }
+
+    .list-item {
+        color: var(--header-text);
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .menu-title {
+        display: none;
+    }
+
+    .main-flex {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10rem;
+    }
+
+    .main-title,
+    .main-text {
+        text-transform: capitalize;
+    }
+
+    .main-title {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .main-text {
+        text-align: left;
+    }
+
+    .flex {
+        align-items: flex-start;
+    }
+
+    .intro {
+        max-width: 52rem;
+    }
+
+    .dark-part {
+        min-height: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .dark-part-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 65rem;
+    }
+
+    .text-dark,
+    .title-dark {
+        text-align: left;
+        margin: 1rem 0;
     }
 }
