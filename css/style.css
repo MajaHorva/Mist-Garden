@@ -599,6 +599,11 @@ article {
         justify-items: center;
     }
 
+    .img-discover-2 {
+        order: 2;
+        grid-column: span 2;
+    }
+
     .grid-container-news {
         display: grid;
         grid-template-columns: 1fr 1fr;
