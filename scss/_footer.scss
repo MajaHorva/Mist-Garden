@@ -57,7 +57,7 @@
 }
 
 .copyright-information {
-    color: var(--light);
+    color: $light;
     font-size: 1.4rem;
     line-height: 2.1rem;
     background-color: $header-text;
@@ -70,4 +70,36 @@
 
 .footer-menu-open {
     display: none;
+}
+
+@media screen and (min-width:700px) {
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    footer>div:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .copyright-information {
+        grid-column: 1/-1;
+    }
+
+    .footer-info,
+    .footer-title,
+    .footer-links {
+        text-align: left;
+    }
+
+    .footer-group {
+        margin: 0 5rem 0 0;
+        justify-content: space-between;
+        max-width: 20rem;
+    }
+
+    .logo-footer {
+        justify-content: left;
+        margin-left: 2rem;
+    }
 }
