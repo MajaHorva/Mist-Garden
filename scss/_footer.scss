@@ -1,0 +1,73 @@
+.footer {
+    background-color: $primary;
+}
+
+.logo-footer {
+    color: $light;
+    justify-content: center;
+    padding-top: 5rem;
+    margin-bottom: 2.7rem;
+}
+
+.footer-info {
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $light;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.footer-title {
+    text-align: center;
+    color: $light;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-family: $title-font-family;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: $light;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7rem;
+    padding-bottom: 2rem;
+}
+
+.footer-group-list img:hover {
+    transform: scale(1.1);
+}
+
+.footer-links a:hover {
+    color: rgba(196, 196, 196, 1);
+}
+
+.copyright-information {
+    color: var(--light);
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    background-color: $header-text;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu-open {
+    display: none;
+}

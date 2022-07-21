@@ -1,0 +1,221 @@
+.main-menu-open {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.main-title {
+    text-align: center;
+    font-size: 3.4rem;
+    font-family: $title-font-family;
+    font-weight: 400;
+    color: $header-text;
+    margin: 1.5rem;
+}
+
+.main-text {
+    font-size: 2rem;
+    color: $light;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2.4rem;
+    max-width: 36rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.btn {
+    border: 2px solid $primary;
+    font-size: 1.4rem;
+    padding: 1.4rem 3rem;
+}
+
+.btn a {
+    text-transform: uppercase;
+}
+
+.btn-dark {
+    background-color: $primary;
+}
+
+.btn-dark a {
+    color: $light;
+}
+
+.btn:hover {
+    opacity: 40%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    margin: 4rem 2rem;
+    width: calc(100% - 4rem);
+    max-width: 480px;
+}
+
+.dark-part {
+    background-color: $primary;
+    position: relative;
+    min-height: 100vh;
+    padding: 5rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.background-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/frame.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 50%;
+    background-position-x: 115%;
+}
+
+.img-discover {
+    width: 90vw;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.title-dark {
+    font-family: $title-font-family;
+    font-size: 3.4rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    color: $light;
+}
+
+.text-dark {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $light;
+}
+
+.title-dark,
+.text-dark {
+    margin: 2rem 3rem;
+}
+
+.btn-dark {
+    border: 2px solid $light;
+    color: $light;
+}
+
+.dark-part-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-part button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.news,
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.news-title {
+    margin-top: 4.7rem;
+    font-size: 3.4rem;
+    font-family: $title-font-family;
+    font-weight: 400;
+    color: var(--header-text);
+    text-transform: capitalize;
+}
+
+.news-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 3.6rem;
+    color: $body;
+    display: flex;
+    align-items: center;
+}
+
+.news-text::before {
+    content: "";
+    display: inline-block;
+    width: 4.8rem;
+    height: 0.2rem;
+    background-color: rgba(196, 196, 196, 0.7);
+    margin-right: 2rem;
+}
+
+.news-text::after {
+    content: "";
+    display: inline-block;
+    width: 4.8rem;
+    height: 0.2rem;
+    background-color: rgba(196, 196, 196, 0.7);
+    margin-left: 2rem;
+}
+
+.news-img {
+    width: 100%;
+}
+
+.article-title {
+    font-family: $title-font-family;
+    color: $header-text;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.article {
+    font-size: 1.6rem;
+    font-family: $body;
+    line-height: 2.4rem;
+}
+
+.article-info {
+    font-family: $bodyS;
+    color: $primary;
+    line-height: 2.4;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(196, 196, 196, 1);
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
